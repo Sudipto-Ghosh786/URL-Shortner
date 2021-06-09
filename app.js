@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express();
 const shortid = require('shortid')
-const PORT = 8000
+const PORT = process.env.PORT || 8000
 const mongoose = require('mongoose')
 const { v4 } = require('uuid')
 
