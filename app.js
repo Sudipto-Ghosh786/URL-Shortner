@@ -15,7 +15,7 @@ require('dotenv').config()
 const dbURI = `mongodb+srv://${ DB_US }:${ DB_PW }@cluster0.6fwzt.mongodb.net/url?retryWrites=true&w=majority`
 const urlDoc = require('./models/urlDoc')
 
-const urlTemplate = PORT
+const urlTemplate = 'rexi.herokuapp.com/';
 
 
 
