@@ -8,9 +8,11 @@ const { v4 } = require('uuid')
 
 require('dotenv').config()
 
+const DB_US = "blasterking"
+const DB_PW = "sP0JoLtK9H6dBJvU"
 
- const DB_US = process.env.DB_US
- const DB_PW = process.env.DB_PW
+// const DB_US = process.env.DB_US
+// const DB_PW = process.env.DB_PW
 
 const dbURI = `mongodb+srv://${ DB_US }:${ DB_PW }@cluster0.6fwzt.mongodb.net/url?retryWrites=true&w=majority`
 const urlDoc = require('./models/urlDoc')
