@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg+xml" href="https://example.com/image.svg">
+	<title>Document</title>
+	<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+	<div class="content">
+		<div class="container">
+			
+			<div class="header">
+				<h1>URL</h1>
+				<p>SHORTNER</p>
+			</div>
+
+
+
+			<form action="/generate">
+				<label for="link">LINK :- </label>
+				<input type="url" name="link" id='url' placeholder="Please Enter URL" />
+				<button>SUBMIT</button>
+			</form>
+
+			<% let prefix = "http://" %>
+
+			<% if(newLink) { %>
+				<p>NEW LINK :- <a href= <%= prefix + newLink %> ><%= newLink %></a></p>
+				<p>OLD LINK :- <a href= <%= originalLink %> ><%= originalLink %></a></p>
+			<% } %>
+
+		</div>
+	</div>
+
+
+</body>
+</html>
